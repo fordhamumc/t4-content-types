@@ -1,0 +1,45 @@
+<style>
+  .header-button_half {display:flex; width:100%;}
+.header-button__block_half_left{display:table-cell; width:50%;margin: 1.25rem 2rem 1.25rem 2rem;}
+  .header-button__block_half_right{display:table-cell; width:50%;margin: 1.25rem 2rem 1.25rem 0;}
+ .header-button__button_half>a{float:right;}
+
+  @media (max-width: 991px){
+ .header-button_half {display:block;}
+    .header-button__block_half_left, .header-button__block_half_right{display:block; width:auto;margin:2rem;  }
+.header-button__button_half>a{float:none;}
+.header-button__block_half{display:block;}
+  }
+
+</style>
+<section class="header-button_half">
+  <div class="header-button__block header-button__block_half_left">
+
+    <h2 class="header-button__title header-button__title_half">
+      <span>
+        <t4 type="content" name="Text Left" output="normal" modifiers="striptags,htmlentities" />
+        <t4 type="content" name="Text (Bold) Left" output="selective-output" process-format="true" format="<span class=&quot;bold&quot;>$value</span>" />
+      </span>
+    </h2>
+    <div class="header-button__button_half">
+      <a href="<t4 type=" content" name="CTA link (external) Left" output="normal" modifiers="striptags,htmlentities" />
+      <t4 type="content" name="CTA link (internal) Left" output="linkurl" modifiers="nav_sections" />" class="btn btn-white">
+      <t4 type="content" name="CTA link text Left" output="normal" modifiers="striptags,htmlentities" /></a>
+    </div>
+
+  </div>
+
+  <div class="header-button__block header-button__block_half_right">
+    <h2 class="header-button__title">
+      <span>
+        <t4 type="content" name="Text Right" output="normal" modifiers="striptags,htmlentities" />
+        <t4 type="content" name="Text (Bold) Right" output="selective-output" process-format="true" format="<span class=&quot;bold&quot;>$value</span>" />
+      </span>
+    </h2>
+    <div class="header-button__button_half">
+      <a href="<t4 type=" content" name="CTA link (external) Right" output="normal" modifiers="striptags,htmlentities" />
+      <t4 type="content" name="CTA link (internal) Right" output="linkurl" modifiers="nav_sections" />" class="btn btn-white">
+      <t4 type="content" name="CTA link text Right" output="normal" modifiers="striptags,htmlentities" /></a>
+    </div>
+  </div>
+</section>
